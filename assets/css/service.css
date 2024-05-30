@@ -1,0 +1,58 @@
+
+.skills{
+    position: relative;
+    min-height: 100vh;
+    color: #fff;
+    width: calc(100vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+    
+    
+}
+
+.skills
+    .theskills{
+    max-width: 98%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.skills .theskills .skill{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+    cursor: pointer;
+}
+.skills .theskills .skill img{
+    height: 11rem;
+}
+.skills .theskills .skill h3{
+    font-size: 3rem;
+    padding: 1rem ;
+}
+.skills .theskills .skill p{
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+.skills .theskills .skill p span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.skills .theskills .skill:hover{
+    background-color: #fff;
+    transition: 1s;
+    /* scale: 110%; */
+}
+.skills .theskills .skill:hover img{
+    scale: 120%;
+    transition: 1s;
+}
+.skills .theskills .skill:hover >*{
+    color: var(--black);
+    scale: 110%;
+    transition: 1s;
+}
